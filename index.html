@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Leptos Single Page Apps for GitHub Pages</title>
+    <link data-trunk rel="copy-dir" href="./static/" />
+    <!-- <link data-trunk href="./static/site.css" rel="css" /> -->
+    <link data-trunk href="404.html" rel="copy-file" />
+    <base data-trunk-public-url />
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <link data-trunk rel="rust" data-wasm-opt="z" />
+    <style>
+      a[aria-current] {
+        font-weight: bold;
+      }
+
+      .contact,
+      .contact-list {
+        border: 1px solid #c0c0c0;
+        border-radius: 3px;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "leptos_spa_gh_pages_site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tailwind-watch": "tailwindcss -i ./index.css -o ./static/site.css --watch",
+    "tailwind-build": "tailwindcss -i ./index.css -o ./static/site.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

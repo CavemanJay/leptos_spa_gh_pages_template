@@ -1,0 +1,5 @@
+/target
+/dist
+/*.log
+/static/site.css
+node_modules

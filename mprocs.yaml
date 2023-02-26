@@ -1,0 +1,5 @@
+procs:
+  trunk: "trunk serve -i node_modules"
+  # bacon clippy: "bacon -j clippy"
+  # bacon tests: "bacon -j test"
+  tailwind: "pnpm run tailwind-watch"
